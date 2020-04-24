@@ -4,8 +4,8 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 
 
 # Installation Steps 
-1. composer dump-autoload
-2. Add "AdLara\Boot\BootstrapServiceProvider::class" in the providers array in config/app.php
+1. Add "AdLara\Boot\BootstrapServiceProvider::class" in the providers array in config/app.php
+2. Make sure database credentials are added in .env file and database is connected with the Laravel Application
 3. Delete all the migrations from database/migrations folder
 3. php artisan vendor:publis --tag=adlarafullsetup --force
 4. npm install 
