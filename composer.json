@@ -11,10 +11,7 @@
     "autoload": {
         "psr-4": {
             "AdLara\\Boot\\": "src/"
-        },
-        "files": [
-            "vendor/adlara/boot/src/helper.php"
-        ]
+        }
     },
     "require": {
         "intervention/image": "^2.5"
