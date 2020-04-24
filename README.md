@@ -15,6 +15,9 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 
 
 # Installation Steps 
+
+- composer require jigeshraval/adlara-bootstrap
+
 1. Add "AdLara\Boot\BootstrapServiceProvider::class" in the providers array in config/app.php
 2. Make sure database credentials are added in .env file and database is connected with the Laravel Application
 3. Delete all the migrations from database/migrations folder
@@ -24,9 +27,9 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 7. php artisan migrate 
 8. Now go to http://127.0.0.1/admin and you will be able to see login screen, use jigesh@jigeshraval.com and password: adlaraera1 for your initial login
 
-# Next step is only if you want database seeding to be done
+# This step is only if you want database seeding to be done
 9. php artisan db:seed --class=PostSeeder
 
 # Documentation
 
-- Coming up soon!
+- Coming soon!
