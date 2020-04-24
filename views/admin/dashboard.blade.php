@@ -7,6 +7,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Admin Powered by AdLara Library</title>
         <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://jigeshraval.com/favicon.ico">
         <script>
             const ADMIN_ROUTE = "{{ config('adlara.admin_route') }}";
             const ADMIN_APP_ROUTE = "{{ config('adlara.admin_route') . '/app' }}";
