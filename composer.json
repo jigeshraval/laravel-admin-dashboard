@@ -1,0 +1,23 @@
+{
+    "name": "jigeshraaval/adlara-bootstrap",
+    "description": "Laravel VueJS/Vuetify Powered admin, booting up required components that separates Admin and Front and provides rich tools such as Media Library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jigesh Raval",
+            "email": "jigesh@jigeshraval.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AdLara\\Boot\\": "src/"
+        },
+        "files": [
+            "vendor/adlara/boot/src/helper.php"
+        ]
+    },
+    "require": {
+        "intervention/image": "^2.5"
+    },
+    "license": "MIT"
+}
