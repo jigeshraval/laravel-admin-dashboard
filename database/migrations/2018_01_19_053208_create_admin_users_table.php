@@ -28,7 +28,7 @@ class CreateAdminUsersTable extends Migration
         $data = [
           'name' => 'Jigesh Raval',
           'email' => 'jigesh@jigeshraval.com',
-          'password' => '$2y$10$JkBE4qanKSUjC.M.OdF7GuqawAkFzkOjho1VFOj88c89Yeup9YQPS'
+          'password' => '$2y$10$ua97WoZ1pUL2P89lth1NGuPFx2yExOHP/p39LgXtX4A7Qq.lfjO3u'
         ];
         \Illuminate\Support\Facades\DB::table('admin_users')->insert($data);
     }
