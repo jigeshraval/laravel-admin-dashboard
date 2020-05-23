@@ -32,4 +32,4 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 
 # Documentation
 
-- Coming soon!
+- https://jigeshraval.com/en/blog/laravel-admin-dashboard
