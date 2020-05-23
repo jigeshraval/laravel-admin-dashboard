@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Hash;
 
 class CreateAdminUsersTable extends Migration
 {
@@ -28,7 +29,7 @@ class CreateAdminUsersTable extends Migration
         $data = [
           'name' => 'Jigesh Raval',
           'email' => 'jigesh@jigeshraval.com',
-          'password' => '$2y$10$ua97WoZ1pUL2P89lth1NGuPFx2yExOHP/p39LgXtX4A7Qq.lfjO3u'
+          'password' => Hash::make('adlaraera1')
         ];
         \Illuminate\Support\Facades\DB::table('admin_users')->insert($data);
     }
