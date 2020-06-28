@@ -16,7 +16,7 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 
 # Installation Steps 
 
-1. composer require jigeshraval/adlara-bootstrap
+1. composer require jigeshraval/laravel-admin-dashboard
 2. Add "AdLara\Boot\BootstrapServiceProvider::class" in the providers array in config/app.php
 3. Make sure database credentials are added in .env file and database is connected with the Laravel Application
 4. Delete all the migrations from database/migrations folder
