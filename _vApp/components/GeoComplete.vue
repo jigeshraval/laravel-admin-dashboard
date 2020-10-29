@@ -26,7 +26,7 @@ import Vue from 'vue'
 import VuetifyGoogleAutocomplete from 'vuetify-google-autocomplete'
 
 Vue.use(VuetifyGoogleAutocomplete, {
-  apiKey: 'AIzaSyBavGIZu3CL6ghTgGxdku8Q1mh7wOQ9nY8'
+  apiKey: ''
 });
 
 export default {
