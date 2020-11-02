@@ -1,6 +1,6 @@
 <?php
 
-namespace AdLara\Boot;
+namespace AdLara;
 
 require __DIR__.'/helper.php';
 
