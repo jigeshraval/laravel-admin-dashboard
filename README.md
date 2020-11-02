@@ -14,6 +14,12 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 - The media library reduces the time consuming tasks of creating uploading functionality and manage it and speed-up the other tasks 
 - Image resizing (Powered by http://image.intervention.io/)
 
+# Installation
+
+``` bash
+composer require jigeshraval/laravel-admin-dashboard
+```
+
 # Installation Steps 
 
 1. composer require jigeshraval/laravel-admin-dashboard
