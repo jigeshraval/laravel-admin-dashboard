@@ -6,7 +6,7 @@ require __DIR__.'/helper.php';
 
 use Illuminate\Support\ServiceProvider;
 
-class BootstrapServiceProvider extends ServiceProvider
+class Bootable extends ServiceProvider
 {
     public function register()
     {
