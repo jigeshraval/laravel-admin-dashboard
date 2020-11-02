@@ -14,10 +14,16 @@ Laravel VueJS/Vuetify Powered admin, booting up required components that separat
 - The media library reduces the time consuming tasks of creating uploading functionality and manage it and speed-up the other tasks 
 - Image resizing (Powered by http://image.intervention.io/)
 
+# Installation
+
+``` bash
+composer require jigeshraval/laravel-admin-dashboard
+```
+
 # Installation Steps 
 
 1. composer require jigeshraval/laravel-admin-dashboard
-2. Add "AdLara\Boot\BootstrapServiceProvider::class" in the providers array in config/app.php
+2. Add "JigeshRaval\Bootable::class" in the providers array in config/app.php
 3. Make sure database credentials are added in .env file and database is connected with the Laravel Application
 4. Delete all the migrations from database/migrations folder
 5. php artisan vendor:publish --tag=adlarafullsetup --force 

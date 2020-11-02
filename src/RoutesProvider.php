@@ -1,6 +1,6 @@
 <?php 
 
-namespace AdLara\Boot;
+namespace JigeshRaval;
 
 use Illuminate\Support\Facades\Route;
 
