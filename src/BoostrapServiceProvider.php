@@ -1,6 +1,6 @@
 <?php
 
-namespace AdLara;
+namespace JigeshRaval;
 
 require __DIR__.'/helper.php';
 
