@@ -10,14 +10,16 @@ class MediaController extends AdminController
 {
     public function initProcessUpload()
     {
-        $files = request()->file('files');
-        $media = new Media;
+        
+        collect(
+            request()->file('files')
+        )->each(function ($file) {
 
-        if (count($files)) {
-            foreach ($files as $file) {
-                return $media->store($file);
-            }
-        }
+            $media = new Media;
+            $media->store($file);
+            
+        });
+
     }
 
     public function initProcessListing()

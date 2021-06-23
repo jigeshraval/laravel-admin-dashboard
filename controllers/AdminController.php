@@ -10,28 +10,29 @@ class AdminController extends Controller
 
     protected $filter_search = [];
 
+    protected $skip_filtering = [
+        'page'
+    ];
+
     protected function initProcessFilter()
     {
-        $filters = request()->input();
-        $skip_filters = ['page', 'generatePDF', 'report'];
-        $filter_keys = array_keys($filters);
+        collect(
+            array_keys(request()->input())
+        )->each(function ($value, $filter) {
 
-        if (count($filters)) {
-            foreach ($filters as $filter => $value) {
-
-                if (!$value) {
-                    continue;
-                }
-
-                $filter = str_replace('-', '.', $filter);
-
-                if (!in_array($filter, $skip_filters)) {
-
-                    $this->filter = true;
-                    $this->filter_search[] = [$filter, 'LIKE', '%' . $value . '%'];
-
-                }
+            if (!$value) {
+                return;
             }
-        }
+
+            $filter = str_replace('-', '.', $filter);
+
+            if (!in_array($filter, $this->skip_filtering)) {
+
+                $this->filter = true;
+                $this->filter_search[] = [$filter, 'LIKE', '%' . $value . '%'];
+
+            }
+        });
+
     }
 }

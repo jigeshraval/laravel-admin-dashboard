@@ -12,16 +12,27 @@ class PageController extends AdminController
     {
         $this->initProcessFilter();
 
+        return response()->json([
+            'obj' => $this->getList(),
+            'keys' => $this->getFilterKeys()
+        ]);
+    }
+
+    protected function getList()
+    {
         $page = Page::select('id', 'name', 'url', 'status')
-        ->orderBy('id', 'desc');
+                      ->orderBy('id', 'desc');
 
         if ($this->filter) {
             $page->where($this->filter_search);
         }
 
-        $this->obj = $page->paginate($this->paginate);
+        return $page->paginate($this->paginate);
+    }
 
-        $keys = [
+    protected function getFilterKeys()
+    {
+        return [
               'id' => [
                   'text' => 'ID',
                   'filter' => true
@@ -40,11 +51,6 @@ class PageController extends AdminController
                   'switch' => true
               ]
         ];
-
-        return array(
-            'obj' => $this->obj,
-            'keys' => $keys
-        );
     }
 
     public function initContentCreate($id = null)
@@ -55,6 +61,7 @@ class PageController extends AdminController
         );
 
         $this->obj = new Page;
+        
         if ($id) {
           $this->obj = $this->obj->find($id);
           $actions = array(

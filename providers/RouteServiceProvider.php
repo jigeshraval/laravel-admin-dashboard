@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use AdLara\Boot\RoutesProvider;
+use JigeshRaval\RoutesProvider;
 
 class RouteServiceProvider extends ServiceProvider
 {
